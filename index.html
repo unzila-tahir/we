@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans,wght@1,100&display=swap" rel="stylesheet">">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./IMG-20231014-WA0090.jpg);
+
+}
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 45px;
+padding-left: 8%;
+padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #f9004d; 
+}
+
+nav ul li{
+    list-style-type :none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
+.btn{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin:20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px; 
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newslatter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline:none ;
+    border-radius: 30px;
+}
+.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width:1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+color: white;
+letter-spacing: 2px;
+font-size: 22px;
+margin-bottom: 25px;
+text-transform: capitalize;
+}
+.about-text p{
+    color:#fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition:.4s;
+}
+button:hover{
+    background-color: transparent;
+    border:2px solid #f9004d;
+    cursor: pointer;
+}
+.service{
+    background: #101010;
+    width:100%;
+    padding:100px 0px;
+}
+.title h2{
+    color:white;
+    font-size: 75px;
+    width:1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+   
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin:25px 0px;
+    color:#f9004d ;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color:#fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding: 13px 22px;
+    border-radius: 30px;
+    transition:.4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border:2px solid #f9004d;
+    cursor: pointer;
+}
+#contact{
+    background: #191919;
+}
+#contact h2{
+    color:white;
+    font-size: 75px;
+    text-align: center;
+    padding-top: 20px;
+}
+#form{
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+}
+label{
+    color: white;
+    display: flex block;
+    font-size: x-large;
+    padding: 2px 0px;
+}
+
+#form input{
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 2px solid #f9004d;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            background-color: white;
+}
+form textarea{
+    border: 2px solid #f9004d;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    width: 522px;
+    height: 135px;
+}
+
+    </style>
+</head>
+<body>
+<!--Home section-->
+
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfol<span>lio</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
+<section id="home">
+        <div class="content">
+            <h4>Hello, my name is</h4>
+            <h1>Unzila <span>Tahir</span></h1>
+            <h3>I am a Web Developer</h3>
+            <div class="newslatter">
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                    <input type="button" name="submit" value="Lets Start">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+            <!--About Section-->
+<section id="about-me">
+    <section class="about">
+        <div class="main">
+    <img src="IMG-20231014-WA0091.jpg">
+    <div class="about-text">
+        <h2>About Me</h2>
+        <h5>Develepor <span>& Designer</span></h5>
+        <p>I am a dedicated and passionate software developer with a strong background in computer science and programming. With several years of experience in the field, I have honed my skills in various programming languages and technologies, enabling me to create efficient and user-friendly software solutions. I am enthusiastic about tackling complex problems and finding innovative solutions through coding. My goal is to contribute my expertise to meaningful projects, collaborate with diverse teams, and continuously learn and grow in the ever-evolving world of technology.</p>
+        <button type="button">Let's Talk</button>
+    </div>
+    </div>
+    </section>
+</section>
+            <!--Services-->
+<section id="services">
+    <div class="service">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Web Develpoment</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals:Firstly, it needs to wrok across all devices. Secondly, it needs to be fast as possible.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-user"></i>
+                <h5>Web Develpoment</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals:Firstly, it needs to wrok across all devices. Secondly, it needs to be fast as possible.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-regular fa-bell"></i>
+                <h5>Web Develpoment</h5>
+                <div class="pra">
+                    <p>Every website should be built with two primary goals:Firstly, it needs to wrok across all devices. Secondly, it needs to be fast as possible.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 style="text-align: center;">Contact Us</h2>
+<div id="form">
+
+<form action="/action">
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+<label for="email">Email:</label>
+<input type="text" id="email" name="email" placeholder="xyz@gmail.com" required>
+
+<label for="contact">subjec:</label>
+<input type="text" id="contact" name="contact" placeholder="xxxx-xxxxxxx" required>
+
+<label for="textarea">Your Message:</label>
+<textarea name="message" id="message" cols="30" rows="10" ></textarea>
+
+<button type="submit" id="button">Submit</button>
+
+</div>
+
+
+</form>
+</section>
+
+</body>
+</html>
